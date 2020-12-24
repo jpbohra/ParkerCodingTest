@@ -1,0 +1,164 @@
+<div class="base-container">
+  <div class="col-lg-12">
+    <form [formGroup]="registerForm">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="firstName"
+          placeholder="First Name"
+          formControlName="firstName"
+          [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }"
+        />
+        <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+          <div *ngIf="f.firstName.errors.required">First Name is required</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="lastName"
+          formControlName="lastName"
+          placeholder="Last Name"
+          [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }"
+        />
+        <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+          <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          aria-describedby="emailHelp"
+          placeholder="Enter email"
+          formControlName="email"
+          [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+        />
+        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+          <div *ngIf="f.email.errors.required">Email is required</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Phone</label>
+        <input
+          type="phone"
+          class="form-control"
+          id="text"
+          aria-describedby="emailHelp"
+          placeholder="Enter Phone Number"
+          formControlName="phone"
+          [ngClass]="{ 'is-invalid': submitted && f.phone.errors }"
+        />
+        <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
+          <div *ngIf="f.phone.errors.required">Phone Number is required</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+          placeholder="Password"
+          formControlName="password"
+          [ngClass]="{ 'is-invalid': submitted && f.password.errors }"
+        />
+        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+          <div *ngIf="f.password.errors.required">Password is required</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Confirm Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+          placeholder="Confirm Password"
+          formControlName="confirmPassword"
+          [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }"
+        />
+        <div
+          *ngIf="submitted && f.confirmPassword.errors"
+          class="invalid-feedback"
+        >
+          <div *ngIf="f.confirmPassword.errors.required">
+            Please confirm password
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="securityQuestion">Select your security question</label>
+        <select
+          class="form-control"
+          id="securityQuestion"
+          [ngClass]="{ 'is-invalid': submitted && f.securityQuestion.errors }"
+          formControlName="securityQuestion"
+        >
+          <option>Security Question 1</option>
+          <option>Security Question 2</option>
+          <option>Security Question 3</option>
+        </select>
+        <div
+          *ngIf="submitted && f.securityQuestion.errors"
+          class="invalid-feedback"
+        >
+          <div *ngIf="f.securityQuestion.errors.required">
+            Please select security question
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="answer">Enter your answer</label>
+        <input
+          type="text"
+          class="form-control"
+          id="securityAnswer"
+          placeholder="Enter your answer"
+          [ngClass]="{ 'is-invalid': submitted && f.securityAnswer.errors }"
+          formControlName="securityAnswer"
+        />
+        <div
+          *ngIf="submitted && f.securityAnswer.errors"
+          class="invalid-feedback"
+        >
+          <div *ngIf="f.securityAnswer.errors.required">
+            Please enter security answer
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            id="gender"
+            value="Male"
+            formControlName="gender"
+            checked
+          />
+          <label class="form-check-label" for="inlineRadio1">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            id="inlineRadio2"
+            value="Female"
+            formControlName="gender"
+          />
+          <label class="form-check-label" for="inlineRadio2">Female</label>
+        </div>
+      </div>
+
+      <button type="submit" (click)="Save()" class="btn btn-primary">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>

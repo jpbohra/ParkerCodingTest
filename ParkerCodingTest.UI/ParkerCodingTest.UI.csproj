@@ -5,6 +5,36 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include=".editorconfig" />
+    <Content Include=".gitignore" />
+    <Content Include="browserslist" />
+    <Content Include="e2e\protractor.conf.js" />
+    <Content Include="e2e\src\app.e2e-spec.ts" />
+    <Content Include="e2e\src\app.po.ts" />
+    <Content Include="karma.conf.js" />
+    <Content Include="out-tsc\e2e\app.e2e-spec.js" />
+    <Content Include="out-tsc\e2e\app.e2e-spec.js.map" />
+    <Content Include="out-tsc\e2e\app.po.js" />
+    <Content Include="out-tsc\e2e\app.po.js.map" />
+    <Content Include="README.md" />
+    <Content Include="src\app\app-routing.module.ts" />
+    <Content Include="src\app\app.component.css" />
+    <Content Include="src\app\app.component.html" />
+    <Content Include="src\app\app.component.spec.ts" />
+    <Content Include="src\app\app.component.ts" />
+    <Content Include="src\app\app.module.ts" />
+    <Content Include="src\assets\.gitkeep" />
+    <Content Include="src\environments\environment.prod.ts" />
+    <Content Include="src\environments\environment.ts" />
+    <Content Include="src\favicon.ico" />
+    <Content Include="src\index.html" />
+    <Content Include="src\main.ts" />
+    <Content Include="src\polyfills.ts" />
+    <Content Include="src\styles.css" />
+    <Content Include="src\test.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
