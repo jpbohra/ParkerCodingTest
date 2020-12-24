@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkerCodingTest.API", "ParkerCodingTest.API\ParkerCodingTest.API.csproj", "{A327F5FF-9C57-4C24-AD7A-7E4ABCCB1EB5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkerCodingTest.Repository", "ParkerCodingTest.Repository\ParkerCodingTest.Repository.csproj", "{2DFE2034-6995-4810-80D9-3389038C8825}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkerCodingTest.DataAccess", "ParkerCodingTest.DataAccess\ParkerCodingTest.DataAccess.csproj", "{EF941D68-EEDD-4898-BE26-E0D1875CBAEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkerCodingTest.API.Test", "ParkerCodingTest.API.Test\ParkerCodingTest.API.Test.csproj", "{0F043731-1ED3-4569-9FCE-4FB76E4AF7AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkerCodingTest.UI", "ParkerCodingTest.UI\ParkerCodingTest.UI.csproj", "{288A703C-AB0D-4F7E-AF80-507523A2C8C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A327F5FF-9C57-4C24-AD7A-7E4ABCCB1EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A327F5FF-9C57-4C24-AD7A-7E4ABCCB1EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A327F5FF-9C57-4C24-AD7A-7E4ABCCB1EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A327F5FF-9C57-4C24-AD7A-7E4ABCCB1EB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DFE2034-6995-4810-80D9-3389038C8825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DFE2034-6995-4810-80D9-3389038C8825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DFE2034-6995-4810-80D9-3389038C8825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DFE2034-6995-4810-80D9-3389038C8825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF941D68-EEDD-4898-BE26-E0D1875CBAEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF941D68-EEDD-4898-BE26-E0D1875CBAEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF941D68-EEDD-4898-BE26-E0D1875CBAEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF941D68-EEDD-4898-BE26-E0D1875CBAEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F043731-1ED3-4569-9FCE-4FB76E4AF7AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F043731-1ED3-4569-9FCE-4FB76E4AF7AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F043731-1ED3-4569-9FCE-4FB76E4AF7AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F043731-1ED3-4569-9FCE-4FB76E4AF7AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{288A703C-AB0D-4F7E-AF80-507523A2C8C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288A703C-AB0D-4F7E-AF80-507523A2C8C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288A703C-AB0D-4F7E-AF80-507523A2C8C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288A703C-AB0D-4F7E-AF80-507523A2C8C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13ED309F-F167-4127-A4E1-7C1FEEF7E85E}
+	EndGlobalSection
+EndGlobal
